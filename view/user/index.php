@@ -22,8 +22,8 @@ if (empty($di->session->get("login"))) {
          <img class="profileimg" style="width: 100px;"  src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png"<?=md5(strtolower(trim($di->session->get("user"))));?>"/></br></br>
          <a class="icons" href="<?="user/update/{$user->id}"?>" title="Edit this information"><i class="fas fa-user-edit"></i></a>
 
-        <p><b>First Name:</b> <?= $user->firstname ?> <?= $user->lastname ?></p>
-        // <p><b>Last Name:</b> <?= $user->lastname ?></p>
+        <p><b>First Name:</b> <?= $user->firstname ?></p>
+        <p><b>Last Name:</b> <?= $user->lastname ?></p>
         <p><b>Email/UserName:</b> <?= $di->session->get("user") ?></p>
 
         <form class="" action="user/logout" method="post">
