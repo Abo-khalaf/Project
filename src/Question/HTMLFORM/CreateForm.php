@@ -25,7 +25,7 @@ class CreateForm extends FormModel
                     "type" => "textarea",
                     "validation" => ["not_empty"],
                 ],
-                "tags" => [
+                "tags (If you wont to add more than one tag you need to add a space)" => [
                     "type" => "text",
                     "validation" => ["not_empty"],
                 ],

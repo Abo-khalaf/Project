@@ -19,7 +19,7 @@ if (empty($di->session->get("login"))) {
 <div class="inf">
 
         <h2> User Information </h2>
-         <img class="profileimg" style="width: 100px;"  src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png"<?=md5(strtolower(trim($di->session->get("user"))));?>"/></br></br>
+         <img class="profileimg" style="width: 100px;"  src="https://img.pngio.com/parent-directory-avatar-2png-39689-png-images-pngio-avatarpng-256_256.png"<?=md5(strtolower(trim($di->session->get("user"))));?>"/></br></br>
          <a class="icons" href="<?="user/update/{$user->id}"?>" title="Edit this information"><i class="fas fa-user-edit"></i></a>
 
         <p><b>First Name:</b> <?= $user->firstname ?></p>

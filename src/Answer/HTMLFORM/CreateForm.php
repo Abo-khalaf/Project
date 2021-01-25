@@ -45,6 +45,10 @@ class CreateForm extends FormModel
 
     public function callbackSubmit() : bool
     {
+        if ($this->di->session->get("username") != null) {
+
+
+
         $answer = new Answer();
         $answer->setDb($this->di->get("dbqb"));
         $answer->answer  = $this->form->value("answer");
@@ -55,6 +59,10 @@ class CreateForm extends FormModel
 
         $answer->save();
         return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public function getItemDetails($id) : object

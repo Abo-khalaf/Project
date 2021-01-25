@@ -77,7 +77,7 @@ font-size: 23px;" class="fa fa-tag "></i> <a href=<?= url("tags/questions/{$link
 
     <div style="" >
             <a href="<?= url("user/view/{$user->id}"); ?>">
-            <img style=" width:50px" alt="<?=$user->firstname ?>" src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png"/>
+            <img style=" width:50px" alt="<?=$user->firstname ?>" src="https://img.pngio.com/parent-directory-avatar-2png-39689-png-images-pngio-avatarpng-256_256.png"/>
             </a>
             <figcaption style=" margin:5px;"><?= $user->firstname?><br> <?=$user->lastname?><br></figcaption>
             <br>

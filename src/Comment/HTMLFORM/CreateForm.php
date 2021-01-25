@@ -57,6 +57,12 @@ class CreateForm extends FormModel
      */
     public function callbackSubmit() : bool
     {
+
+        if ($this->di->session->get("username") != null) {
+
+
+
+
         $comment = new Comment();
         $comment->setDb($this->di->get("dbqb"));
         $comment->comment  = $this->form->value("comment");
@@ -82,7 +88,11 @@ class CreateForm extends FormModel
 
         $comment->save();
         return true;
+        }else {
+            return false;
+        }
     }
+
     /**
      * Callback what to do if the form was successfully submitted, this
      * happen when the submit callback method returns true. This method

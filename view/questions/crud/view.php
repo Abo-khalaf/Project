@@ -53,10 +53,12 @@ $urlToComment = url("comment/create")
     <div style="" class="answer">
         <p><?= $filter->doFilter($answer->answer, ["markdown"]); ?></p>
 
-        <p class="author" >Answered By:  <a href="<?= url("user/"); ?>"><?= $answer->username ?></a><?php if ($di->session->get("user")) : ?><img width="20px" style="margin-left:10px; border-radius: 30px;" class="round" alt="" src="https://www.gravatar.com/avatar/0c4cfef9aae14fe22e081aa62234df88?s=100&d=identicon&r=PG<?=md5(strtolower(trim($di->session->get("user"))));?>"/></p>
+        <p class="author" >Answered By:  <a href="<?= url("user/"); ?>"><?= $answer->username ?></a><?php if ($di->session->get("user")) : ?><img width="20px" style="margin-left:10px; border-radius: 30px;" class="round" alt="" src="https://img.pngio.com/parent-directory-avatar-2png-39689-png-images-pngio-avatarpng-256_256.png"<?=md5(strtolower(trim($di->session->get("user"))));?>"/></p>
         <?php endif; ?>
     <button   class="btn orange" name="button" onclick="window.location.href = '<?=$urlToComment."/".$answer->id. "/". "answerID"?>';">Comment</button>
 </div>
+<?php
+?>
 
 </div>
 
